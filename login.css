@@ -1,0 +1,122 @@
+.login-section {
+    background-color: #f7f7f7;
+    padding: 50px;
+    align-items: center;
+}
+.login-section h1{
+    text-align: center;
+}
+.login-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.login-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 20%;
+}
+
+.login-card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card label {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.login-card input[type="text"], .login-card input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-card input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+.login-card .flex{
+    display: flex;
+    justify-content: space-between;
+}
+.login-card input[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+
+.register-form-section {
+    background-color: #f7f7f7;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form-section h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.register-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form-section label {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.register-form-section input[type="text"], .register-form-section input[type="email"], .register-form-section input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-form-section input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+    .login-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .register-form-section {
+        padding: 20px;
+    }
+}

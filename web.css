@@ -1,0 +1,235 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body , html{
+    transition: scroll 0.5s ease;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    position: absolute;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+nav {
+    background-color: darkcyan;
+    height: 60px;
+    max-width: 100%;
+    object-fit: fill;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+}
+
+
+nav .logo img{
+    width:100px;
+    height: 60px;
+    padding: 0 10px;
+    border-radius: 100%;
+}
+
+
+nav a {
+    color: black; 
+    margin: 0 15px; 
+    text-decoration: none; 
+}
+
+nav h1{
+    color:black;
+    position: relative;
+   
+}
+
+.video video{
+    object-fit: fill;
+    width: 100%;
+    height: 240px;
+    padding-top: 10px;
+}
+   
+.cards {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    border: 6px solid darkcyan;
+    cursor: pointer;
+    background-color: darkslategrey;
+}
+
+.cards:hover {
+    background-color:darkcyan;
+    box-shadow: 0 0 10px #FFF10A; 
+}
+
+.card1-img img {
+    width: 250px;
+    height: 270px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin-left: 20px;
+}
+
+.card-description {
+    color: #fff;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.card-description h1 {
+    color:darkgoldenrod;
+}
+
+.card-description ul  li:hover {
+    color:yellow; 
+}
+
+.arrow-5 {
+    width:35%;
+    height:30px;
+    display: grid;
+    overflow: hidden;
+    color: #cf240a;
+    margin-top: 120px;
+  }
+  .arrow-5:before,
+  .arrow-5:after {
+    content: "";
+    grid-area: 1/1;
+    background: currentColor;
+    clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
+    animation: a5 1s infinite;
+    transform: translate(calc(0% + var(--s,0%)));
+  }
+  
+  .arrow-5:after {
+    --s:-100%;
+  }
+  
+  @keyframes a5 {
+    80%,100%{transform: translate(calc(100% + var(--s,0%)))}
+  }
+  
+
+  .card2 {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    border: 6px solid darkcyan;
+    cursor: pointer;
+    background-color: darkslategrey;
+}
+
+.card2:hover {
+    background-color:darkcyan;
+    box-shadow: 0 0 10px #cf240a; 
+}
+
+.card2 .video2 video{
+    width: 350px;
+    border-radius: 100%;
+    padding: 50px;
+}
+
+
+.card2 .card-description {
+    color: #fff;
+    object-fit: contain;
+    max-width: 40%;
+}
+
+.card2 .card-description h1 {
+    color:darkgoldenrod
+}
+
+.card-description li:hover {
+    color:aqua; /* Change list item color on hover */
+}
+
+.arrow-5 {
+    width:35%;
+    height:30px;
+    display: grid;
+    overflow: hidden;
+    color: #cf240a;
+    margin-top: 120px;
+  }
+  .arrow-5:before,
+  .arrow-5:after {
+    content: "";
+    grid-area: 1/1;
+    background: currentColor;
+    clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
+    animation: a5 1s infinite;
+    transform: translate(calc(0% + var(--s,0%)));
+  }
+  
+  .arrow-5:after {
+    --s:-100%;
+  }
+  
+  @keyframes a5 {
+    80%,100%{transform: translate(calc(100% + var(--s,0%)))}
+  }
+
+  .video3 video{
+    object-fit: fill;
+    width: 100%;
+    height: 240px;
+  }
+
+  .services-section {
+    background-color: #fff;
+    padding: 50px;
+    max-width:100%;
+}
+
+.services-container {
+    display: flex;
+    justify-content:left;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.service .flex{
+    display: flex;
+}
+.service-card h2 {
+    color:black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-card li {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
